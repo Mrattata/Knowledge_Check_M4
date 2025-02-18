@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- The Page title with the navigation bar that takes you to other pages -->
+    <header>
+        <h1>Our Homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="check_home.html">Home</a> </li>
+                <li><a href="check_about.html">About</a> </li>
+                <li><a href="check_contact.html">Contact</a> </li>
+                <li><a href="#form">Your Info</a> </li>
+                <li><a href="#product">Product</a> </li>
+            </ul>
+        </nav>
+    </header>
+<!-- The first image I added -->
+
+    <img src="dragon.jpeg" alt="Cool Dragons" width="600" hight="600">
+    
+<!-- This section is for taking the users info in a form -->
+    <section id="form">
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br><br>
+    
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" required placeholder="Enter your email">
+        <br><br>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required placeholder="write your comment"></textarea>
+        <br><br>
+
+        <label>How Did You Find Us?</label>
+        <input type="radio" id="google" name="find" value="google">
+        <label for="google">Google</label>
+        <input type="radio" id="socialmedia" name="find" value="socialmedia">
+        <label for="socialmedia">Social Media</label>
+        <input type="radio" id="friend" name="find" value="friend">
+        <label for="friend">Friend</label>
+        <br><br>
+
+        <input type="submit" value="Send">
+      </fieldset>
+    </section>
+
+<!-- The second image I added with rounded edges -->
+    <img src="dnd-dice.avif" alt="Cool DnD Dice" width="300" hight="300" style="border-radius: 10%">
+
+<!-- This section shows a table with the product info -->
+    <section id="product">
+        <h2>Our Product</h2>
+        <table border="1">
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Dice Sets</td>
+                <td>$10</td>
+                <td>7 Dice</td>
+            </tr>
+            <tr>
+                <td>Mini Figures</td>
+                <td>$20</td>
+                <td>1 Figurine</td>
+            </tr>
+            <tr>
+                <td>Character Sheets</td>
+                <td>$3</td>
+                <td>1 Sheet</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
